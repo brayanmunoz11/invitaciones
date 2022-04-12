@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Invitaciones.scss";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot, } from '@fortawesome/free-solid-svg-icons';
 
 
 
@@ -17,11 +17,11 @@ export default function  Invitaciones (){
         <div class="title-content">
             <h3>FELIZ CUMPLEAÑOS</h3>
             <hr />
-            <div class="intro">Valeria Samantha</div>
+            <div class="intro"><h5 className="bg-sass"> Cristina Gamarra</h5></div>
             <hr />
             <div class="fecha   ">Sábado 20 de Abril</div>
             
-            
+    
         </div>
         
 
@@ -39,14 +39,16 @@ export default function  Invitaciones (){
             
             </td>
             <td class= "second"> Hora 21:00 ¡Te espero!</td>
+            
         </div>
 
         
 
         <div class="utility-info">
+
             
             <a href="https://api.whatsapp.com/send?phone=51912924249&text=Feliz cumpleaños, si asistiré :)" target="_blank">Confirma tu asistencia</a>
-           
+            <i class="fa-brands fa-github-square"></i>
             
         </div>
 

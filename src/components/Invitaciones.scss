@@ -1,12 +1,42 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
 @import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic);
 
+
+
 // variables
 $card-width:  350px;
 $card-height: 500px;
 $h-color:     #9CC9E3;
 $yellow:      #D0BB57;
 $txt-color:   #DCE3E7;
+
+
+
+$color-sass: #097585;
+$color-sass-80 : #09758580;
+
+@keyframes opacidad {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.bg-sass {
+    background-color: $color-sass;
+    transition: background-color 0.5s ease-in-out;
+    animation: opacidad 2s;
+    
+
+    &:hover {
+        background-color: $color-sass-80;
+    }
+}
+
+
 
 * {
   box-sizing: border-box;
@@ -31,7 +61,7 @@ body{
   text-align: center;
   
   &.spring-fever{
-    background: url(https://d3ugyf2ht6aenh.cloudfront.net/stores/870/449/products/madera-pastel1-5e79e99fd645fbbdea16189420696614-1024-1024.jpg) no-repeat;
+    background: url(https://somoskudasai.com/wp-content/uploads/2021/01/Gawr.Gura_.full_.3072782.png) no-repeat;
     background-size: 25px 50px;
     background-size: 100% 100%;
     
@@ -68,6 +98,9 @@ body{
       opacity: 2;
       bottom: 120px;
     }
+
+    
+
     .color-overlay{
       background: rgba(84, 104, 110, 0.259);
     }
@@ -105,7 +138,9 @@ hr{
   font-family: 'Droid Serif', serif;
   font-size: 20px;
   font-style: italic;
-  line-height: 18px;
+  line-height: 30px;
+  
+  color: #ffffff;
 }
 .fecha{
     width: 200px;
@@ -128,8 +163,10 @@ hr{
   font-style: 16px;
   line-height: 24px;
   z-index: 20;
-  opacity: 0;
+  opacity: 1;
   transition: bottom .3s, opacity .2s cubic-bezier(.33,.66,.66,1);
+  color: #000000;
+  
 }
 
 .utility-info{
@@ -137,6 +174,7 @@ hr{
   bottom: 0px;
   left: 0;
   z-index: 20;
+  
 }
 .utility-list{
   list-style-type: none;
@@ -160,6 +198,10 @@ hr{
     
 
   }
+}
+
+.a{
+  text-align: center;
 }
 
 td {
