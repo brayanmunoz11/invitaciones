@@ -14,7 +14,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: repeat center/100% url("https://fondosmil.com/fondo/17024.jpg");
   min-height: 100vh;
   display: flex;
   flex-direction: column;
